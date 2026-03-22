@@ -1,0 +1,127 @@
+/* GOOGLE FONT IMPORT */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+/* 4.7 BOX MODEL & RESET */
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f7f9fc;
+    color: #374151;
+    line-height: 1.7;
+    padding: 60px 0;
+}
+
+.wrapper {
+    width: 90%;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+/* 4.14 POSITIONING - HEADER */
+header {
+    position: relative;
+    background: linear-gradient(135deg, #1e2a38, #2c3e50);
+    color: #ffffff;
+    padding: 60px 40px;
+    border-radius: 12px;
+    margin-bottom: 40px;
+}
+
+header h1 {
+    font-size: 36px;
+    color: #c4b5fd;
+    margin-bottom: 10px;
+}
+
+/* 4.14 POSITIONING - PHOTO (Fixed Alignment) */
+.photo-box {
+    position: absolute;
+    bottom: 20px; /* Moved up to stay perfectly within the header area */
+    right: 40px;
+    width: 130px;
+    height: 130px;
+    background-color: #ffffff;
+    border: 4px solid #8e7dbe;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+.photo-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* 4.15 FLOAT AND CLEAR - LAYOUT */
+.column-main {
+    float: left;
+    width: 62%;
+}
+
+.column-side {
+    float: right;
+    width: 34%;
+}
+
+.clear-floats {
+    clear: both;
+}
+
+/* 4.7 BOX MODEL & 4.9 SELECTORS - CARDS */
+.card {
+    background: #ffffff;
+    padding: 30px;
+    margin-bottom: 25px;
+    border-radius: 10px;
+    border-bottom: 3px solid #e5e7eb;
+}
+
+.card h2 {
+    color: #1e2a38;
+    font-size: 16px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: 20px;
+    border-left: 4px solid #8e7dbe;
+    padding-left: 15px;
+}
+
+/* 3.12 INLINE BLOCKS - SKILLS (No Hover) */
+.skill-list li {
+    display: inline-block;
+    background: #eef2ff;
+    color: #1e2a38;
+    padding: 6px 14px;
+    margin: 4px;
+    font-size: 12px;
+    font-weight: 600;
+    border-radius: 20px;
+    border: 1px solid #d1d5db;
+}
+
+/* LIST STYLING */
+ul {
+    list-style: none;
+}
+
+.highlights li {
+    margin-bottom: 10px;
+    padding-left: 18px;
+    position: relative;
+}
+
+/* 4.10 PSEUDO-ELEMENT - Custom Bullet */
+.highlights li::before {
+    content: "•";
+    color: #8e7dbe;
+    font-size: 20px;
+    position: absolute;
+    left: 0;
+    top: -4px;
+}
